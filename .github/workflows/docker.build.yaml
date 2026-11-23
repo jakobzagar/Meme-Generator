@@ -1,0 +1,14 @@
+name: Build Docker image
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+      - name: Build Docker image
+        run: docker build -t meme-generator .

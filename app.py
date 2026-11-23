@@ -1,5 +1,3 @@
-from email.policy import default
-
 from flask import Flask,render_template,request
 
 from PIL import Image, ImageDraw, ImageFont
