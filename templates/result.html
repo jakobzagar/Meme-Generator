@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Generator</title>
+</head>
+<body>
+    <h1>Meme Generator</h1>
+
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label>Naloži sliko</label>
+        <input type="file" name="slika" required>
+
+        <br><br>
+
+        <label>Vnesi zgornji tekst</label>
+        <input type="text" name="zgornji_text" required>
+
+        <br><br>
+
+        <label>Vnesi spodnji tekst</label>
+        <input type="text" name="spodnji_text" required>
+
+        <br><br>
+
+        <button type="submit">Ustvari meme</button>
+    </form>
+
+    <h2>Tvoj meme</h2>
+    <img src="../static/meme.png" alt="ustvarjeni meme">
+</body>
+</html>
